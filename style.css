@@ -1,15 +1,31 @@
 body {
     background-color: #f9fafc;
     font-family: 'Open Sans', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
 .nav-list {
-    list-style-type: none;
+    flex-direction: column;
     padding: 0px;
     color: #69696a;
+    list-style-type: none;
     
 }
 h3 {
     padding: 0px;
+}
+.btn1 {
+        width: 97%;
+        border-radius: 20px;
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        font-size: medium;
+        text-align: center;
+}
+.btn1:hover {
+    opacity: 0.8;
 }
 
 .btn {
@@ -19,6 +35,9 @@ h3 {
     color: #fff;
     padding: 10px;
     font-size: medium;
+}
+.btn:hover {
+    opacity: 0.8;
 }
 
 p {
@@ -55,7 +74,7 @@ footer a {
 }
 .links {
     position: fixed;
-    right: 5px;
+    right: 10px;
     bottom: 5px;
 }
 h4 {
@@ -64,3 +83,83 @@ h4 {
     bottom: 10px;
     left: 20px;
 }
+
+@media screen and (min-width: 768px) {
+     
+    .nav-list {
+        padding: 0px;
+       
+    }
+    ul li {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        float: right;
+        padding: 5px;
+        position: relative;
+        top: -50px;
+        right: 90px;
+    }
+    .btn1 {
+        width: auto;
+        border-radius: 20px;
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        font-size: medium;
+        text-align: center;
+        justify-content: flex-end;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+}
+
+    main {
+        margin-top: 150px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 50%;
+}
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    h3 {
+        margin-left: 10px;
+    }
+    
+    .circle1 {
+        background-color: rgba(247, 136, 167, 0.6);
+        width: 175px;
+        height: 175px;
+        border-radius: 100px;
+        border: none;
+        position: fixed;
+        top: 200px;
+        right: 100px;
+        
+    }
+    .circle2 {
+        background-color: rgba(247, 193, 162, 0.7);
+        width: 140px;
+        height: 140px;
+        border-radius: 100px;
+        border: none;
+        position: fixed;
+        top: 300px;
+        right: 50px;
+    }
+    .circle3 {
+        background-color: rgba(207, 130, 213, 0.6);
+        width: 115px;
+        height: 115px;
+        border-radius: 100px;
+        border: none;
+        position: fixed;
+        top: 220px;
+        right: 40px;
+    }
+}
+    
+    
+
